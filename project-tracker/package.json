@@ -10,9 +10,19 @@
     "express": "^4"
   },
   "devDependencies": {
-    "sqlite3": "^5"
+    "sqlite3": "^5.1.6"
   },
   "scripts": {
     "start": "cds-serve"
+  },
+  "cds": {
+    "requires": {
+      "db": {
+        "kind": "sqlite",
+        "credentials": {
+          "database": "db.sqlite"
+        }
+      }
+    }
   }
 }
