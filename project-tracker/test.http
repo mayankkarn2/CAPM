@@ -1,1 +1,5 @@
 GET http://localhost:4004/project/Tasks
+###
+
+
+GET http://localhost:4004/project/getTasks(user='Mayank')

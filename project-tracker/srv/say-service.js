@@ -1,5 +1,5 @@
 module.exports = (say) =>{
-    say.on ('hello', req => {
-        console.log("In Hello");
-    });
+    say.on('hello', (req) => 
+        `Hello ${req.data.to}!`
+    );
 }
