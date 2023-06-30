@@ -14,12 +14,14 @@ module.exports = ProjectService = (srv) => {
     //Get Tasks of Single User
     srv.on("getTasks", async (req,res) => {
         const user = req.data.user;
+        if(user==='') {
+            return "Please enter user";
+        }
         const result = await SELECT.from(Tasks).where({AssignedTo: user})/*.columns('TaskName')*/;
         return result;
     });
 
-    //Insert a new task
-
+    
     
 
 
