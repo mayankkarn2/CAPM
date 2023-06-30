@@ -27,3 +27,5 @@ Learn more at https://cap.cloud.sap/docs/get-started/.
 ## Project Description
 
 CAPM with HANA deployment, XSUAA authentication
+
+https://developers.sap.com/tutorials/cap-service-deploy.html
